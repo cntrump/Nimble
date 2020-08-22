@@ -49,6 +49,8 @@ Pod::Spec.new do |s|
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"',
   }
 
+  s.static_framework = true
+
   s.cocoapods_version = '>= 1.4.0'
   if s.respond_to?(:swift_versions) then
     s.swift_versions = ['5.0']
